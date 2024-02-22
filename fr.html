@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display:grid-fr(비율)=display:flex의flex-basis와 동일</title>
+<style>
+    .grid {
+        display: grid;
+       grid-template-columns: 2fr 5fr 2fr;  
+        /* grid-template-columns: 30% 40% 30%;  비율*/
+       /*  grid-template-columns: 20vw 40vw 30vw; */
+        gap:10px; 
+    }
+    .grid .item {
+        background-color: #666;
+        color: #fff;
+        padding: 20px;        
+
+    }
+</style>
+</head>
+<body>
+    <!-- .grid>.item*3{$번째} -->
+    <div class="grid">
+        <div class="item">1번째</div>
+        <div class="item">2번째</div>
+        <div class="item">3번째</div>
+    </div>
+</body>
+</html>
